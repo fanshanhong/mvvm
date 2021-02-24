@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.fan.databinding.StringUtils" />
+
+        <import type="com.fan.databinding.StringUtilsKt" />
+
+        <variable
+            name="userInfo"
+            type="com.fan.databinding.model.User" />
+
+        <variable
+            name="userPresenter"
+            type="com.fan.databinding.Activity6.UserPresenter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity6">
+
+        <!--
+        绑定表达式中会根据需要生成一个名为context的特殊变量，context的值是根 View 的getContext()方法返回的Context对象， context变量会被具有该名称的显式变量声明所覆盖
+        -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->userPresenter.onUserNameClick(context,userInfo)}"
+            android:text="@{ String.valueOf(Math.abs(-1))}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{userPresenter::onooo}"
+            android:text="测试 onclick" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:afterTextChanged="@{userPresenter.afterTextChanged}"
+            android:hint="用户名" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->userPresenter.onUserNameClick(context,userInfo)}"
+            android:text="@{StringUtils.INSTANCE.lowerCase(userInfo.name)}" />
+        <!--
+        这里要写 StringUtils.INSTANCE, 否则编译不通过
+        因此在xml中使用, 其实是使用Java方法, 要按照 Java调用Kotlin的方式来写
+
+        下面使用顶层属性的方式,也要按照Java调用Kotlin的方式来.
+        Kotlin的顶层方法/顶层函数, 都会编译成对应的Java文件, 举例如下:
+
+        //kotlin顶层函数和属性
+        const val CONSTANT_STRING = "test string"
+        val VAL_STRING = "test string"
+        fun testFunction() {}
+
+        //对应的java代码
+        public final class TopTestKt {
+           @NotNull
+           public static final String CONSTANT_STRING = "test string";
+           @NotNull
+           private static final String VAL_STRING = "test string";
+
+           @NotNull
+           public static final String getVAL_STRING() {
+              return VAL_STRING;
+           }
+
+           public static final void testFunction() {
+           }
+        }
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{StringUtilsKt.CONSTANT_STRING}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{StringUtilsKt.upperCase(userInfo.name)}" />
+
+
+    </LinearLayout>
+</layout>

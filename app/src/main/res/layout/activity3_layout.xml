@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="observableGoodsBean"
+            type="com.fan.databinding.model.ObservableGoods" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{observableGoodsBean.name}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(observableGoodsBean.price)}" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/modify_name_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改name"/>
+
+        <Button
+            android:id="@+id/modify_price_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改price"/>
+
+        <Button
+            android:id="@+id/go_to_activity4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go to activity4"/>
+    </LinearLayout>
+</layout>

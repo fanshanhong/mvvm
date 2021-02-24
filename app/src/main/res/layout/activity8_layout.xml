@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="imageUrl"
+            type="String" />
+
+        <variable
+            name="deleteNumber"
+            type="com.fan.databinding.model.DeleteNumber" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity8">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            bind:url="@{imageUrl}" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="modifyUrl"
+            android:text='@{"修改图片的url"}' />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/colorAccent"
+                android:text="@{String.valueOf(deleteNumber.number)}"
+                bind:hideIfZero="@{deleteNumber.number}"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="30dp"
+                android:maxHeight="30dp"
+                android:src="@android:drawable/ic_delete" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="增加1"
+            android:layout_height="wrap_content"
+            android:onClick="addDeleteNumber"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="减少1"
+            android:layout_height="wrap_content"
+            android:onClick="subDeleteNumber"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background='@{"蓝色"}'
+            android:padding="20dp"
+            android:text="蓝色背景红色字"
+            android:textColor='@{"红色"}'/>
+    </LinearLayout>
+
+
+</layout>

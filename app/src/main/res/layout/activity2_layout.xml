@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+
+        <!-- 使用 kotlin 编写的 Goods 实体类-->
+
+        <variable
+            name="goods"
+            type="com.fan.databinding.model.Goods" />
+
+        <!--   使用 Java 编写的 Goods 实体类-->
+
+        <variable
+            name="goodsJava"
+            type="com.fan.databinding.model.GoodsJava" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="goods name:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{goods.name,default=默认name}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="goods price:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(goods.price), default=默认price}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="goods detail:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{goods.detail, default=默认detail}" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/modify_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变Goods的name属性"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/modify_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变Goods的price属性"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/modify_goods_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变Goods的全部属性"
+            android:textAllCaps="false" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="java goods name:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{goodsJava.name,default=默认name}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="java goods price:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(goodsJava.price), default=默认price}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="java goods detail:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{goodsJava.detail, default=默认detail}" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/modify_java_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变JavaGoods的name属性"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/modify_java_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变JavaGoods的price属性"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/modify_java_goods_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变JavaGoods的全部属性"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/go_to_activity3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go to Activity3"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="observableGoods"
+            type="com.fan.databinding.model.ObservableGoods" />
+
+
+        <variable
+            name="goods"
+            type="com.fan.databinding.model.Goods" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity5">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证Goods" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{goods.name}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@={goods.name}" />
+
+        <!--
+        TIP:如果在 Goods 的 name 的 set方法中 调用了  notifyPropertyChanged(BR.name), 这样可以在修改EditText的时候自动修改数据
+        如果没有调用: notifyPropertyChanged(BR.name), 则无法实现双向绑定(其实也无法实现单向绑定)
+        -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证ObservableGoods" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{observableGoods.name}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@={observableGoods.name}" />
+
+    </LinearLayout>
+
+</layout>

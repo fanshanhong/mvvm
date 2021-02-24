@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/go_to_activity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to activity1" />
+
+    <Button
+        android:id="@+id/go_to_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to activity2" />
+
+    <Button
+        android:id="@+id/go_to_activity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to activity3" />
+
+    <Button
+        android:id="@+id/go_to_activity4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to activity4" />
+
+    <Button
+        android:id="@+id/go_to_activity5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to activity5" />
+
+    <Button
+        android:id="@+id/go_to_activity6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to activity6" />
+
+    <Button
+        android:id="@+id/go_to_activity7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to activity7" />
+
+    <Button
+        android:id="@+id/go_to_activity8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to activity8" />
+</LinearLayout>
+
