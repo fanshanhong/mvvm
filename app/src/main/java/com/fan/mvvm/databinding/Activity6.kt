@@ -1,4 +1,4 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -7,8 +7,8 @@ import android.text.Editable
 import android.view.View
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import com.fan.databinding.databinding.Activity6LayoutBinding
-import com.fan.databinding.model.User
+import com.fan.mvvm.R
+import com.fan.mvvm.model.User
 
 /**
  * 演示事件绑定
@@ -30,7 +30,9 @@ class Activity6 : AppCompatActivity() {
         //setContentView(R.layout.activity6_layout)
 
         contentView =
-            DataBindingUtil.setContentView<Activity6LayoutBinding>(this, R.layout.activity6_layout)
+            DataBindingUtil.setContentView<Activity6LayoutBinding>(this,
+                R.layout.activity6_layout
+            )
 
         user = User()
         user?.name = "HHhh"

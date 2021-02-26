@@ -3,7 +3,7 @@
 
     <data>
 
-        <import type="com.fan.databinding.model.User" />
+        <import type="com.fan.mvvm.model.User" />
 
         <variable
             name="user"

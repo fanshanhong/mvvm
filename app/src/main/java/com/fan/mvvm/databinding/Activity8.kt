@@ -1,4 +1,4 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -10,9 +10,9 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
-import com.fan.databinding.databinding.Activity8LayoutBinding
-import com.fan.databinding.model.DeleteNumber
+import com.fan.mvvm.model.DeleteNumber
 import androidx.databinding.BindingConversion
+import com.fan.mvvm.R
 
 
 /**
@@ -31,7 +31,9 @@ class Activity8 : AppCompatActivity() {
         //setContentView(R.layout.activity8_layout)
 
         val contentView =
-            DataBindingUtil.setContentView<Activity8LayoutBinding>(this, R.layout.activity8_layout)
+            DataBindingUtil.setContentView<Activity8LayoutBinding>(this,
+                R.layout.activity8_layout
+            )
 
 
         contentView.imageUrl = imageUrl

@@ -1,4 +1,4 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ObservableArrayList
 import androidx.databinding.ObservableArrayMap
-import com.fan.databinding.databinding.Activity4LayoutBinding
+import com.fan.mvvm.R
 import kotlin.random.Random
 
 /**
@@ -26,7 +26,9 @@ class Activity4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         contentView =
-            DataBindingUtil.setContentView<Activity4LayoutBinding>(this, R.layout.activity4_layout)
+            DataBindingUtil.setContentView<Activity4LayoutBinding>(this,
+                R.layout.activity4_layout
+            )
 
         contentView?.map = map
         contentView?.list = list

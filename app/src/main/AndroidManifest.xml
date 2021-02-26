@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fan.databinding">
+    package="com.fan.mvvm">
 
     <application
         android:allowBackup="true"
@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity8" />
-        <activity android:name=".Activity7" />
-        <activity android:name=".Activity6" />
-        <activity android:name=".Activity5" />
+        <activity android:name=".lifecycle.LifecycleActivity"></activity>
+        <activity android:name=".livedata.LiveDataActivity" />
+        <activity android:name=".viewmodel.ViewModelActivity" />
+        <activity android:name=".viewmodel.SaveInstanceActivity" />
+        <activity android:name=".databinding.Activity8" />
+        <activity android:name=".databinding.Activity7" />
+        <activity android:name=".databinding.Activity6" />
+        <activity android:name=".databinding.Activity5" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity3" />
-        <activity android:name=".Activity1" />
-        <activity android:name=".Activity2" />
-        <activity android:name=".Activity4" />
+        <activity android:name=".databinding.Activity3" />
+        <activity android:name=".databinding.Activity1" />
+        <activity android:name=".databinding.Activity2" />
+        <activity android:name=".databinding.Activity4" />
     </application>
 
 </manifest>

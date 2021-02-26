@@ -8,13 +8,13 @@
 
         <variable
             name="goods"
-            type="com.fan.databinding.model.Goods" />
+            type="com.fan.mvvm.model.Goods" />
 
         <!--   使用 Java 编写的 Goods 实体类-->
 
         <variable
             name="goodsJava"
-            type="com.fan.databinding.model.GoodsJava" />
+            type="com.fan.mvvm.model.GoodsJava" />
 
     </data>
 

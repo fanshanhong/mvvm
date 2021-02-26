@@ -6,7 +6,7 @@
 
         <variable
             name="observableGoodsBean"
-            type="com.fan.databinding.model.ObservableGoods" />
+            type="com.fan.mvvm.model.ObservableGoods" />
 
     </data>
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Activity3">
+        tools:context=".databinding.Activity3">
 
 
         <LinearLayout

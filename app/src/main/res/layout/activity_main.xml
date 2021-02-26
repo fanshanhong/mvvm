@@ -6,52 +6,83 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/go_to_activity1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="go to activity1" />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <Button
+               android:id="@+id/go_to_activity1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to activity1" />
 
-    <Button
-        android:id="@+id/go_to_activity2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="go to activity2" />
+           <Button
+               android:id="@+id/go_to_activity2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to activity2" />
 
-    <Button
-        android:id="@+id/go_to_activity3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="go to activity3" />
+           <Button
+               android:id="@+id/go_to_activity3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to activity3" />
 
-    <Button
-        android:id="@+id/go_to_activity4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="go to activity4" />
+           <Button
+               android:id="@+id/go_to_activity4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to activity4" />
 
-    <Button
-        android:id="@+id/go_to_activity5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="go to activity5" />
+           <Button
+               android:id="@+id/go_to_activity5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to activity5" />
 
-    <Button
-        android:id="@+id/go_to_activity6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="go to activity6" />
+           <Button
+               android:id="@+id/go_to_activity6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to activity6" />
 
-    <Button
-        android:id="@+id/go_to_activity7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="go to activity7" />
+           <Button
+               android:id="@+id/go_to_activity7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to activity7" />
 
-    <Button
-        android:id="@+id/go_to_activity8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="go to activity8" />
+           <Button
+               android:id="@+id/go_to_activity8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to activity8" />
+
+           <Button
+               android:id="@+id/save_instance_activity"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to save_instance_activity" />
+           <Button
+               android:id="@+id/view_model_activity"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to view_model_activity" />
+
+           <Button
+               android:id="@+id/live_data_activity"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to live_data_activity" />
+           <Button
+               android:id="@+id/lifecycle_activity"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="go to lifecycle_activity" />
+       </LinearLayout>
+   </ScrollView>
 </LinearLayout>
 

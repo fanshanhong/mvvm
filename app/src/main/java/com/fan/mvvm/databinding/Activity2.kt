@@ -1,4 +1,4 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,10 +8,10 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.Observable
-import androidx.databinding.library.baseAdapters.BR
-import com.fan.databinding.databinding.Activity2LayoutBinding
-import com.fan.databinding.model.Goods
-import com.fan.databinding.model.GoodsJava
+import com.fan.mvvm.BR
+import com.fan.mvvm.R
+import com.fan.mvvm.model.Goods
+import com.fan.mvvm.model.GoodsJava
 
 /**
  * @Description: 演示 Kotlin 和 Java 编写的实体类中 BaseObservable 的使用

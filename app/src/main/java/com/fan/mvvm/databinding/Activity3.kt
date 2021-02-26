@@ -1,12 +1,12 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.databinding.DataBindingUtil
-import com.fan.databinding.databinding.Activity3LayoutBinding
-import com.fan.databinding.model.ObservableGoods
+import com.fan.mvvm.R
+import com.fan.mvvm.model.ObservableGoods
 
 /**
  * 演示 ObservableField 的使用
@@ -18,7 +18,9 @@ class Activity3 : AppCompatActivity() {
 //        setContentView(R.layout.activity3_layout)
 
         val contentView =
-            DataBindingUtil.setContentView<Activity3LayoutBinding>(this, R.layout.activity3_layout)
+            DataBindingUtil.setContentView<Activity3LayoutBinding>(this,
+                R.layout.activity3_layout
+            )
 
         val observableGoodsBean = ObservableGoods("BBB", "B detail", 4f)
 

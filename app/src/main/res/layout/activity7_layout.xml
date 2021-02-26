@@ -8,7 +8,7 @@
 
         <variable
             name="userInfo"
-            type="com.fan.databinding.model.User" />
+            type="com.fan.mvvm.model.User" />
 
     </data>
 
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Activity7">
+        tools:context=".databinding.Activity7">
 
         <TextView
             android:layout_width="wrap_content"

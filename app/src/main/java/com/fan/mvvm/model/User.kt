@@ -1,4 +1,4 @@
-package com.fan.databinding.model
+package com.fan.mvvm.model
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
@@ -7,18 +7,18 @@ import androidx.databinding.library.baseAdapters.BR
 /**
  * @Description:
  * @Author: fan
- * @Date: 2021-02-24 14:44
+ * @Date: 2021-02-07 13:57
  * @Modify:
  */
-class DeleteNumber: BaseObservable() {
+
+class User : BaseObservable(){
 
     @Bindable
-    var number: Int = 0
+    var name: String? = null
     set(value) {
         field = value
-        notifyPropertyChanged(BR.number)
+        notifyPropertyChanged(BR.name)
     }
 
-
+    var age: Int? = null
 }
-

@@ -6,12 +6,12 @@
 
         <variable
             name="observableGoods"
-            type="com.fan.databinding.model.ObservableGoods" />
+            type="com.fan.mvvm.model.ObservableGoods" />
 
 
         <variable
             name="goods"
-            type="com.fan.databinding.model.Goods" />
+            type="com.fan.mvvm.model.Goods" />
 
     </data>
 
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Activity5">
+        tools:context=".databinding.Activity5">
 
 
         <TextView

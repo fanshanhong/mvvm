@@ -1,11 +1,11 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.fan.databinding.databinding.Activity5LayoutBinding
-import com.fan.databinding.model.ObservableGoods
-import com.fan.databinding.model.Goods
+import com.fan.mvvm.R
+import com.fan.mvvm.model.ObservableGoods
+import com.fan.mvvm.model.Goods
 
 
 /**
@@ -21,7 +21,9 @@ class Activity5 : AppCompatActivity() {
 
 
         val contentView =
-            DataBindingUtil.setContentView<Activity5LayoutBinding>(this, R.layout.activity5_layout);
+            DataBindingUtil.setContentView<Activity5LayoutBinding>(this,
+                R.layout.activity5_layout
+            );
 
         val goods = Goods()
         goods.name ="goodsName"

@@ -1,4 +1,4 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import android.view.View
 

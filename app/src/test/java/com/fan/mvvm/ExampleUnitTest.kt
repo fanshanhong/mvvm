@@ -1,4 +1,4 @@
-package com.fan.databinding
+package com.fan.mvvm
 
 import org.junit.Test
 

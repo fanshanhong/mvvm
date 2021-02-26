@@ -1,10 +1,15 @@
-package com.fan.databinding
+package com.fan.mvvm
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.fan.mvvm.databinding.*
+import com.fan.mvvm.lifecycle.LifecycleActivity
+import com.fan.mvvm.livedata.LiveDataActivity
+import com.fan.mvvm.viewmodel.SaveInstanceActivity
+import com.fan.mvvm.viewmodel.ViewModelActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -21,6 +26,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<Button>(R.id.go_to_activity6).setOnClickListener(this)
         findViewById<Button>(R.id.go_to_activity7).setOnClickListener(this)
         findViewById<Button>(R.id.go_to_activity8).setOnClickListener(this)
+        findViewById<Button>(R.id.save_instance_activity).setOnClickListener(this)
+        findViewById<Button>(R.id.view_model_activity).setOnClickListener(this)
+        findViewById<Button>(R.id.live_data_activity).setOnClickListener(this)
+        findViewById<Button>(R.id.lifecycle_activity).setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
@@ -33,6 +42,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.go_to_activity6 -> startActivity(Intent(this, Activity6::class.java))
             R.id.go_to_activity7 -> startActivity(Intent(this, Activity7::class.java))
             R.id.go_to_activity8 -> startActivity(Intent(this, Activity8::class.java))
+            R.id.save_instance_activity -> startActivity(Intent(this, SaveInstanceActivity::class.java))
+            R.id.view_model_activity -> startActivity(Intent(this, ViewModelActivity::class.java))
+            R.id.live_data_activity -> startActivity(Intent(this, LiveDataActivity::class.java))
+            R.id.lifecycle_activity -> startActivity(Intent(this, LifecycleActivity::class.java))
             else -> println("no activity")
         }
     }

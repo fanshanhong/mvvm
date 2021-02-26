@@ -1,12 +1,12 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
-import com.fan.databinding.databinding.MyCustomData
-import com.fan.databinding.model.User
+import com.fan.mvvm.R
+import com.fan.mvvm.model.User
 
 /**
  * 演示 Data Binding 基础使用
@@ -21,7 +21,9 @@ class Activity1 : AppCompatActivity() {
         // 返回的类型就是 MyCustomData
         // 如果不指定 class, 返回的类型是 ActivityMain + Binding
         val contentView =
-            DataBindingUtil.setContentView<MyCustomData>(this, R.layout.activity1_layout)
+            DataBindingUtil.setContentView<MyCustomData>(this,
+                R.layout.activity1_layout
+            )
         val userInfo = User()
         userInfo.name = "fanfan"
         userInfo.age = 122

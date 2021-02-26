@@ -1,4 +1,4 @@
-package com.fan.databinding
+package com.fan.mvvm.databinding
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.fan.databinding.databinding.FragmentMyLayoutBinding
+import com.fan.mvvm.R
 
 /**
  * @Description: 展示DataBinding 在Fragment 中的使用

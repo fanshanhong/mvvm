@@ -1,4 +1,4 @@
-package com.fan.databinding.model
+package com.fan.mvvm.model
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable

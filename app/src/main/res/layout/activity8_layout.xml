@@ -12,7 +12,7 @@
 
         <variable
             name="deleteNumber"
-            type="com.fan.databinding.model.DeleteNumber" />
+            type="com.fan.mvvm.model.DeleteNumber" />
 
     </data>
 
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Activity8">
+        tools:context=".databinding.Activity8">
 
 
         <ImageView
