@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.fan.mvvm.R
@@ -15,6 +17,8 @@ import com.fan.mvvm.R
  * @Modify:
  */
 class MyFragment : Fragment() {
+
+    lateinit var button:Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -56,8 +60,23 @@ class MyFragment : Fragment() {
 
         inflate.data2 = "啊哈哈哈哈" // 等价于 inflate.setData2("11122")
 
+
         return inflate.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        val button = view.findViewById<Button>(R.id.button)
+        val data2View = view.findViewById<TextView>(R.id.data2_view)
+
+        // 这样设置可以生效
+        button.setOnClickListener {
+            data2View.text="点击 button 修改了"
+        }
 
 
     }
+
 }

@@ -33,7 +33,9 @@ class MyLiveData : ViewModel() {
     val placesLiveData = Transformations.switchMap(queryLiveData) {
         //当queryLiveData的值变化时就会触发转化函数
             name ->
-        MutableLiveData(name)
+        val a = MutableLiveData(name)
+        println("---Transformations.switchMap placesLiveData : $a")
+        a
     }
 
 

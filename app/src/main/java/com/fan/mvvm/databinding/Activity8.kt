@@ -66,6 +66,7 @@ class Activity8 : AppCompatActivity() {
 
 }
 
+// 这里写不写 app: 都行
 @BindingAdapter("url")
 fun loadImage(view: ImageView, url: String) {
     println("loadImage:${url}")

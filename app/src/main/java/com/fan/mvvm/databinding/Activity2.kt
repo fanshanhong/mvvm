@@ -56,7 +56,7 @@ class Activity2 : AppCompatActivity() {
             goods.name = "name也变化了2222"
             goods.price = 1101.1f
 
-            // setDetail中使用了 notifyChange(), 因此使用了该对象的字段的的UI都会及时更新
+            // setDetail中使用了 notifyChange(), 因此使用了该对象的字段的的UI都会及时更新(包括那些没有使用@Bindable 的字段.都会更新的)
             goods.detail = "新的detail"
         }
 
